@@ -1,22 +1,4 @@
-<?php 
-if(isset($_POST['submit'])){
-    $to = "ahmed.masmoudi@esprit.tn"; // this is your Email address
-    $from = $_POST['email']; // this is the sender's Email address
-    $first_name = $_POST['name'];
-    $last_name = $_POST['name'];
-    $subject = "Form submission";
-    $subject2 = "Copy of your form submission";
-    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
-    $message2 = "Here is a copy of your message " . $first_name . "\n\n" . $_POST['message'];
 
-    $headers = "From:" . $from;
-    $headers2 = "From:" . $to;
-    mail($to,$subject,$message,$headers);
-    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
-    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
-    // You can also use header('Location: thank_you.php'); to redirect to another page.
-    }
-?>
 
 <!doctype html>
 
@@ -92,7 +74,7 @@ if(isset($_POST['submit'])){
 		      </button>
 
 		       <!-- logo -->
-		      <a class="logo" href="#">Ahmed</a>
+		      <a class="logo" href="#">Ahmed Masmoudi</a>
 
 		    </div>
 
@@ -103,7 +85,7 @@ if(isset($_POST['submit'])){
 		      <ul class="nav navbar-nav navbar-right">
 		        <li><a href="#" data-scroll-nav="0" class="active">Home</a></li>
 		        <li><a href="#" data-scroll-nav="1">About</a></li>
-		        <li><a href="#" data-scroll-nav="2">Services</a></li>
+		        <li><a href="#" data-scroll-nav="2">Skills</a></li>
 		        <li><a href="#" data-scroll-nav="3">Works</a></li>
 		        <li><a href="#" data-scroll-nav="4">Clients</a></li>
 		        <li><a href="#" data-scroll-nav="5">Blog</a></li>
@@ -115,7 +97,7 @@ if(isset($_POST['submit'])){
 		<!-- ====== End Navgition ======  -->
 
 		<!-- ====== Header ======  -->
-		<section id="home" class="header" data-scroll-index="0" style="background-image: url(img/bg.jpg);" data-stellar-background-ratio="0.8">
+		<section id="home" class="header" data-scroll-index="0" style="background-image: url(img/robot.jpg);" data-stellar-background-ratio="0.8">
 
 			<!-- particles -->
 			<div id="particles-js"></div>
@@ -131,8 +113,8 @@ if(isset($_POST['submit'])){
 					            <span class="blc">I Am </span>
 					            <span class="cd-words-wrapper">
 					              <b class="is-visible">Ahmed Masmoudi</b>
-					              <b>Developer</b>
-					              <b>Designer</b>
+					              <b>a Developer</b>
+					              <b>a Designer</b>
 					            </span>
 			          		</h1>
 
@@ -231,7 +213,7 @@ if(isset($_POST['submit'])){
 
 					<!-- section heading -->
 					<div class="section-head">
-						<h3>Services.</h3>
+						<h3>Skills.</h3>
 					</div>
 
 					<!-- items -->
@@ -239,42 +221,42 @@ if(isset($_POST['submit'])){
 						<div class="item">
 							<span class="icon"><i class="fa fa-laptop" aria-hidden="true"></i></span>
 							<h6>Web Design</h6>
-							<p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
+							<p>HTML,CSS,JS,PHP,Ajax and some frameworks like Symfony</p>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="item">
-							<span class="icon"><i class="fa fa-bullhorn" aria-hidden="true"></i></span>
-							<h6>Branding</h6>
-							<p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
+							<span class="icon"><i class="fa fa-linux" aria-hidden="true"></i></span>
+							<h6>Environments</h6>
+							<p>I am familiar with different environments like linux and some of its distributions</p>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="item">
-							<span class="icon"><i class="fa fa-umbrella" aria-hidden="true"></i></span>
-							<h6>Development</h6>
-							<p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
+							<span class="icon"><i class="fa fa-language" aria-hidden="true"></i></span>
+							<h6>Languages</h6>
+							<p>I am a fluent French and English speaker, and I speak a little German</p>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="item">
-							<span class="icon"><i class="fa fa-diamond" aria-hidden="true"></i></span>
-							<h6>Creative Design</h6>
-							<p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
+							<span class="icon"><i class="fa fa-github" aria-hidden="true"></i></span>
+							<h6>Collaborative Work</h6>
+							<p>I worked on different projects in teams using VCS like Github</p>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="item">
-							<span class="icon"><i class="fa fa-television" aria-hidden="true"></i></span>
-							<h6>Fully Responsive</h6>
-							<p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
+							<span class="icon"><i class="fa fa-cogs" aria-hidden="true"></i></span>
+							<h6>Robotics & IoT</h6>
+							<p>I have done some Robotics projects and IoT business solutions </p>
 						</div>
 					</div>
 					<div class="col-md-4">
 						<div class="item">
-							<span class="icon"><i class="fa fa-camera" aria-hidden="true"></i></span>
-							<h6>Retina Ready</h6>
-							<p>Lorem Ipsum is simply dummy text of the Lorem Ipsum has been the industry's standard dummy text ever</p>
+							<span class="icon"><i class="fa fa-paint-brush" aria-hidden="true"></i></span>
+							<h6>Design</h6>
+							<p>I am good at Adobe Softwares like Photoshop, Illustrator and Premiere Pro</p>
 						</div>
 					</div>
 				</div><!-- /row -->
@@ -679,48 +661,13 @@ if(isset($_POST['submit'])){
 							<div class="clearfix"></div>
 						</div>
 
-						<!-- contact form -->
-						<form action="" class='form' id='contact-form' method='post'><input type='hidden' name='form-name' value='contact-form' />
-		                    <div class="messages"></div>
-
-		                    <div class="controls">
-
-		                        <div class="row">
-		                            <div class="col-md-6">
-		                                <div class="form-group">
-		                                    <input id="form_name" type="text" name="name" placeholder="Name" required="required">
-		                                </div>
-		                            </div>
-
-		                             <div class="col-md-6">
-		                                <div class="form-group">
-		                                    <input id="form_email" type="email" name="email" placeholder="Email" required="required">
-		                                </div>
-		                            </div>
-		                        </div>
-		                        <div class="row">
-		                            <div class="col-md-12">
-		                                <div class="form-group">
-		                                    <textarea id="form_message" name="message" placeholder="Message" rows="4" required="required"></textarea>
-		                                </div>
-
-		                                <input type="submit" value="Submit" class="buton buton-bg">
-		                            </div>
-		                        </div>
-		                    </div>
-		                </form>
-
-					</div>
-				</div><!-- /row -->
-			</div><!-- /container -->
-		</section>
-		<!--====== End Contact ======-->
+						
 
 		<!--====== Footer ======-->
 		<footer>
 			<div class="container text-center">
 				<div class="row">
-					<p>Copy Right 2018 &copy; By Daniels All Rights Reserved</p>
+					<p>Copy Right 2018 &copy; By Ahmed All Rights Reserved</p>
 				</div>
 			</div>
 		</footer>
